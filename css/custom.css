@@ -1,0 +1,1061 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+/*==========================================================================================
+                                        ROOT
+==========================================================================================*/
+
+* {
+  font-family: kolage-demi;
+  max-width: 100vw;
+  border-radius: 0;
+  background: none;
+  border: none;
+}
+@font-face {
+  font-family: integral-regular;
+  src: url(../fonts/integral/IntegralCF-Regular.woff);
+}
+@font-face {
+  font-family: kolage-demi;
+  src: url(../fonts/kolage/Kolage-DemiBold.woff);
+}
+
+:root {
+  --purple: #780dfa;
+  --lightblue: #b5bbc7;
+  --red: #f50054;
+  --green: #05f2c0;
+  --darkblue: #00153f;
+}
+
+/*                BODY                 */
+body {
+  position: relative;
+  margin: 0;
+  min-height: 100vh;
+  background-color: white;
+  top: 0;
+  width: 100vw;
+}
+#logIn {
+  background-color: var(--purple);
+}
+#logIn,
+#aboutUs,
+#signUp,
+#addApt{
+  /* for footer */
+  height: 120vh;
+}
+
+/*                MAIN                 */
+main {
+  padding-bottom: 20vh;
+  padding-top: 2.5vh;
+  margin-top: 3rem;
+}
+
+#logInMain {
+  display: flex;
+  margin: 0;
+  background-color: var(--purple);
+  flex-direction: column;
+  align-content: center;
+  overflow: hidden;
+}
+
+#homeMain {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#signUpMain {
+  display: flex;
+  margin: 0;
+  background-color: var(--purple);
+  align-content: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+
+#aboutUsMain,
+#addAptMain {
+  margin: 0;
+  padding-top: 5rem;
+}
+
+/*                NAV                 */
+nav {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  width: 100vw;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  height: 3.5rem;
+  background: white;
+}
+
+.navLink {
+  font-family: kolage-demi;
+  font-size: initial;
+  text-decoration: none;
+  color: var(--red);
+  transition: background-color 0.5s;
+  align-self: center;
+  margin: 0 3em 0 3em;
+  width: max-content;
+  position: relative;
+  text-transform: lowercase;
+}
+
+nav .active {
+  color: var(--darkblue);
+}
+
+.navLink::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: inherit;
+  position: absolute;
+  bottom: -0.25rem;
+  left: 0;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 250ms ease-out;
+}
+
+.navLink:hover::after,
+.navLink:focus::after {
+  transform: scaleX(1);
+}
+
+.navTitle {
+  font-family: integral-regular;
+  color: var(--purple);
+  font-size: x-large;
+  align-self: center;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 2rem;
+  text-decoration: none;
+}
+.navAddApt{
+  background-color: var(--purple);
+  border-radius: 1rem;
+  padding: .4rem .6rem;
+  color: white;
+  margin: auto 1rem auto 0rem;
+  text-decoration: none;
+}
+nav .logIn{
+  margin-right: .3rem;
+}
+nav .signUp{
+  margin-left: .3rem;
+}
+.navSlash{
+  margin-left: 0 !important;
+}
+/*==========================================================================================
+                                        GENERAL
+==========================================================================================*/
+
+h1 {
+  font-family: integral-regular;
+  font-size: xx-large;
+  color: var(--red);
+  text-transform: uppercase;
+}
+h2 {
+  font-family: kolage-demi;
+  color: var(--red);
+}
+
+h3 {
+  font-family: integral-regular;
+  font-size: large;
+  color: var(--lightblue);
+  line-height: 1.6;
+}
+p {
+  line-height: 1.6;
+  color: var(--darkblue);
+  max-width: 80ch;
+}
+
+form {
+  box-sizing: border-box;
+  padding: 2%;
+  background: inherit;
+  margin: 0 auto 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form p {
+  color: white;
+}
+
+form a {
+  color: whitesmoke;
+}
+
+table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: flex-start;
+}
+
+th,
+td {
+  line-height: 20px;
+}
+th {
+  color: white;
+  background-color: var(--purple);
+}
+tr:nth-child(even) {
+  background-color: whitesmoke;
+}
+
+img {
+  max-width: 100%;
+}
+
+cite {
+  font-size: xx-small;
+}
+label {
+  color: white;
+  display: block;
+  font-size: 14px;
+  height: 16px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  transition: ease-in-out, top 0.35s ease-in-out;
+}
+
+input {
+  background: transparent;
+  border-bottom: var(--red) 0.1em solid;
+  color: #f2f2f2;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  outline: none !important;
+  width: 100%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  transition: ease-in-out, d 0.35s ease-in-out;
+}
+input:focus {
+  border-bottom-color: var(--green);
+}
+
+/*            FOOTER          */
+footer {
+  width: 100%;
+  background-color: var(--purple);
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  height: 20vh;
+  display: flex;
+}
+#footerDiv {
+  margin: auto;
+}
+#footerDiv p {
+  margin: auto;
+  color: white;
+}
+footer a {
+  color: white;
+}
+footer p {
+  color: white;
+  text-align: center;
+}
+
+
+/*==========================================================================================
+                                        SPECIFIC
+==========================================================================================*/
+
+/*---------------------------------------------------------------------------------------*/
+/*                                 Home Page                                   */
+
+#homeDisplay {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.page-one {
+  position: absolute;
+  top: 25vh;
+}
+.page-one h1 {
+  text-align: left;
+  font-size: 10rem;
+  margin: 0;
+  color: var(--purple);
+  margin-left: 10rem;
+}
+.page-one h2 {
+  text-align: left;
+  font-size: 2rem;
+  color: var(--red);
+  margin-left: 10rem;
+  margin-top: 0;
+  text-transform: lowercase;
+}
+
+#searchForm {
+  margin-left: 10rem;
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
+  padding: 0;
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: solid 0.075rem var(--darkblue);
+}
+
+#searchImage {
+  width: auto;
+  min-width: 0;
+  height: 32px;
+}
+#searchForm input {
+  color: var(--lightblue);
+  border-bottom: none;
+  padding-left: 1rem;
+}
+
+.home article {
+  min-height: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 100vw;
+  gap: 0;
+}
+
+#mySpace article {
+  margin-bottom: 5em;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#picClass {
+  width: 100vw;
+}
+
+.box-home-one {
+  background-color: var(--purple);
+  height: 20rem;
+  padding: 4rem;
+  display: flex;
+}
+.box-home-one h2 {
+  color: var(--red);
+  font-size: 4rem;
+  margin: 0;
+  font-family: integral-regular;
+}
+
+.box-home-one h3 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.box-home-one div {
+  margin: auto 5rem;
+}
+
+.box-home-two {
+  display: flex;
+  height: 40rem;
+}
+
+.box-home-left {
+  width: 50%;
+  display: flex;
+}
+
+.box-home-left div {
+  margin: auto;
+  width: max-content;
+}
+.box-home-left h2 {
+  font-size: 4rem;
+  color: var(--darkblue);
+  font-family: integral-regular;
+}
+.emphasis {
+  color: var(--purple);
+  font-family: integral-regular;
+}
+
+.box-home-right {
+  width: 50%;
+  display: flex;
+  text-align: left;
+  background-color: #00153f;
+}
+.box-home-right div {
+  padding: 5rem;
+  margin: auto;
+}
+.box-home-right p {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+.box-home-three {
+  display: flex;
+  height: 5rem;
+  background-color: var(--purple);
+}
+.box-home-four {
+  display: flex;
+  height: 30rem;
+  background-color: white;
+}
+.home img {
+  position: absolute;
+  width: 100vw;
+  left: 15%;
+  bottom: -10px;
+  z-index: -1;
+}
+/*---------------------------------------------------------------------------------------*/
+/*                                 About Us                                              */
+#aboutUs article {
+  margin-left: 10vw;
+}
+#aboutUs article p {
+  margin-left: 5vw;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*                                 Log In/Sign Up Page                                   */
+
+.btn-switchToSignup,
+.btn-switchToLogin {
+  display: flex;
+  margin: auto;
+  height: max-content;
+  color: white;
+  align-items: center;
+  width: max-content;
+  transition: transform 200ms ease;
+}
+.btn {
+  transition: transform 200ms ease;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.box-loginForm,
+.box-signupForm {
+  width: 50vw;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0;
+  background-color: var(--purple);
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  margin-top: 10rem;
+  gap: 3rem;
+}
+.box-loginForm h1,
+.box-signupForm h1{
+  margin: auto;
+  color: white;
+}
+
+.box-loginPic,
+.box-loginForm {
+  margin-bottom: 1em;
+}
+
+.box-loginPic,
+.box-signupPic {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.box-loginPic h1,
+.box-signupPic h1 {
+  position: absolute;
+  top: 25%;
+  font-size: 4em;
+  z-index: 1;
+  color: white;
+  text-align: left;
+  margin: auto 20% auto 20%;
+}
+
+#loginPic,
+#signupPic {
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(50%);
+  width: 50vw;
+}
+
+.form-login,
+.form-signup{
+  min-width: 30vw;
+  padding: 0;
+}
+
+.box-signupForm {
+  width: 50vw;
+  position: relative;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0;
+  background-color: var(--purple);
+  display: flex;
+  flex-direction: column;
+  float: right;
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: 5%;
+}
+.box-signupForm input[type="submit"] {
+  margin-top: 5%;
+}
+/*---------------------------------------------------------------------------------------*/
+/*                                 Add Apartment Page                                    */
+
+#addAptForm {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  border-radius: 2rem;
+}
+#addAptForm h1{
+  color: white;
+}
+.box-checks,
+.box-checks-included {
+  display: flex;
+}
+.box-checks input,
+.box-checks-included input {
+  visibility: hidden;
+  width: 0;
+  position: absolute;
+}
+.container-checkbox {
+  width: 30%;
+  border-radius: 1em;
+  border: 0.1em solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  height: 2em;
+  margin: auto;
+  transition: background-color ease-out 0.25s;
+}
+.container-checkbox label{
+  margin: auto;
+}
+
+.checkLabel {
+  margin: auto;
+}
+
+#addresses,
+#bedBath,
+#cityState {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+}
+#address1 {
+  flex-grow: 2;
+  flex-basis: 80%;
+}
+#address2 {
+  flex-grow: 1;
+}
+#city {
+  flex-grow: 2;
+  flex-basis: 70%;
+}
+#state {
+  flex-grow: 1;
+  flex-basis: min-content;
+}
+
+input[type="submit"] {
+  min-width: 25vw;
+  grid-row: 3;
+  background-color: var(--red);
+  border-radius: 1em;
+  -webkit-appearance: none;
+}
+
+.box-radio-pets,
+.box-heating {
+  margin-bottom: 5%;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*                                     MySpace Page                                      */
+
+#feedbackText {
+  width: 100%;
+  border: var(--red) solid;
+  color: var(--purple);
+  border-radius: 1em;
+}
+#feedbackFormBox {
+  width: inherit;
+  background-color: var(--purple);
+  padding: 0;
+  border-radius: 0;
+  display: flex;
+}
+#feedbackFormBox a {
+  margin: auto;
+  font-size: large;
+  background-color: var(--red);
+  border-radius: 1em;
+  height: 100%;
+  width: 20vw;
+  text-decoration: none;
+}
+#feedbackFormBox a:hover {
+  background-color: var(--lightblue);
+}
+
+#feedbackFormBox a h3 {
+  font-size: xx-large;
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+
+#feedbackForm {
+  width: 50%;
+}
+
+#myReviewsDiv {
+  display: flex;
+  width: 75vw;
+  margin: auto;
+}
+#newReviewBtn {
+  margin-left: auto;
+  border-radius: 1em;
+  background-color: var(--green);
+  text-decoration: none;
+  padding: 1em 2em;
+  height: min-content;
+}
+
+#mySpace #reviews {
+  display: flex;
+  margin: auto;
+
+}
+
+.mySpaceAlert{
+  position: absolute;
+  margin-left: auto;
+  z-index: 5;
+  margin-right: auto;
+  left: 0;
+  display: flex;
+  top: calc(85vh);
+  padding-left: 40vw;
+  padding-right: 40vw;
+  height: 3rem;
+  width: 20vw;
+  background-color: var(--red);
+  color: white;
+}
+.mySpaceAlert h3{
+  margin: auto;
+  position: relative;
+  color: white;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*                              Apartment Overview Page                                  */
+.boxAptIncluded h4{
+  color: lightgray
+}
+.boxAptIncluded .include-active{
+  color: black;
+}
+
+.boxAptRow1{
+  display: flex;
+}
+.boxAptRow1Left{
+  width: 60vw;
+}
+.boxAptPics{
+  display: flex;
+}
+.boxAptPics23{
+  display: flex;
+  flex-direction: column;
+}
+
+.boxAptPic1{
+  height: 25vw;
+  background: url("../images/uploaded/ndesmara_78_12_0.JPG");
+  background-size: cover;
+  background-position: center;
+  width: 40vw;
+}
+.boxAptPic2{
+  background: var(--red);
+  width: 20vw;
+  height: 12.5vw;
+}
+.boxAptLandlord{
+  background-color: var(--darkblue);
+  width: 40vw;
+  height: 40vw;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.boxAptLandlord h1{
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+.boxAptLandlord h2{
+  color: #780dfa;
+}
+
+.boxAptBedBath, .boxAptCost{
+  width: 60vw;
+  background-color: var(--purple);
+  height: 5vw;
+  display: flex;
+  margin-top: 1vh;
+}
+.boxAptBedBath h3, .boxAptCost h3{
+  margin: auto;
+  color: white;
+}
+
+.boxAptDates{
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+}
+.boxAptDates *{
+  margin: auto;
+}
+/*---------------------------------------------------------------------------------------*/
+
+/*              RADIO BUTTONS           */
+input[type="radio"] {
+  visibility: hidden;
+  position: absolute;
+}
+.box-radio {
+  display: flex;
+  width: 20vw;
+  height: fit-content;
+  margin: auto;
+}
+
+.container-radio {
+  width: 30%;
+  border-radius: 1em;
+  border: 0.1em solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  height: 2em;
+  margin: auto;
+  transition: background-color ease-out 0.25s;
+}
+
+#radlabel {
+  margin: auto;
+}
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label {
+  top: -5em;
+  font-size: xx-small;
+  opacity: 1;
+}
+
+.inputText {
+  font-size: 14px;
+  width: 100%;
+}
+
+.floating-label {
+  position: relative;
+  pointer-events: none;
+  top: -2em;
+  transition: 0.2s ease all;
+}
+/*Search page*/
+#searchArticle {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  overflow: scroll;
+  margin-right: 15%;
+  margin-left: 15%;
+  padding: 0;
+}
+#reviews {
+  display: flex;
+  max-width: 75vw;
+  overflow: scroll;
+}
+#reviewBox {
+  width: 15em;
+  overflow: hidden;
+  margin: 0.5em;
+  height: 25em;
+  box-shadow: 0.2em 0.2em 0.5em grey;
+}
+
+#reviewBoxBottom {
+  padding: 1em;
+}
+
+#reviewBoxBottom h3 {
+  text-decoration: none;
+}
+
+#reviewPreview {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+}
+#searchArticle a {
+  text-decoration: none;
+}
+#searchArticle a h4:hover {
+  color: var(--purple);
+}
+
+fieldset,
+label {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset,
+label {
+  margin: 0;
+  padding: 0;
+}
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+  border: none;
+  float: left;
+}
+
+.rating > input {
+  display: none;
+}
+.rating > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label {
+  color: #ddd;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label {
+  color: #ffd700;
+} /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label {
+  color: #ffed85;
+}
+
+/* Style the form*/
+#addAptForm {
+  background-color: var(--purple);
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+#addApartmentFormBox{
+  margin: auto;
+}
+
+#addAptForm .action-button {
+  width: 100px;
+  background: #27ae60;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+#addApartmentFormBox {
+  width: 60%;
+  padding: 0;
+}
+#addAptForm .action-button:hover,
+#msform .action-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #27ae60;
+}
+
+#addAptForm fieldset {
+  border: none;
+  box-sizing: border-box;
+  margin: 0.75em auto auto;
+  min-width: 9em;
+
+  /*stacking fieldsets above each other*/
+  position: relative;
+}
+/*Hide all except first fieldset*/
+#addAptForm fieldset:not(:first-of-type) {
+  display: none;
+}
+#addApt {
+  overflow-x: hidden;
+}
+
+/*test apt page
+ */
+/* Style the form */
+
+/* Style the input fields */
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+.tab .starsBox {
+  display: flex;
+}
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #04aa6d;
+}
+#prevBtn,
+#nextBtn {
+  color: white;
+  font-size: 1em;
+  margin-top: 1em;
+  border: 0.1em var(--red) solid;
+  border-radius: 0.5em;
+  width: 5em;
+  background-color: var(--red);
+}
+
+#verifyFormBox {
+  background: var(--purple);
+}
+textarea {
+  background-color: white;
+  width: 100%;
+}
+
+#deleteReview {
+  margin: auto;
+  background-color: red;
+  border-radius: 1em;
+  display: flex;
+  width: 10em;
+  height: 2em;
+  margin-top: 5%;
+}
+#deleteReview a {
+  color: white;
+  margin: auto;
+  text-decoration: none;
+}
+#windowPic {
+  height: 10em;
+  display: flex;
+}
+
+.aptPics {
+  height: 5em;
+  margin: auto;
+}
+#aptPicsDiv {
+  display: flex;
+}
+
+

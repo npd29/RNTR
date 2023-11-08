@@ -1,0 +1,24 @@
+pmkListingID,fkUsername,fldBedrooms,fldBathrooms,fldAddress1,fldAddress2,fldCity,fldState,fldZIP,fldLandlord,fldLandlordResponse,fldWalls,fldSubletting,fldPaint,fldGarbage,fldWater,fldElectricity,fldGas,fldWifi,fldSnow,fldParking,fldPets,fldSecure,fldHeating,fldMaintenance,fldComments,fldApartmentOverall,fldLandlordOverall,fldViews,fldLocation,fldLandlordComments,fldTime,fkAptID,fldDeleted,fldMoveInMonth,fldLeaseMonth,fldCost,fldLaundry,fldMoveInDay,fldLeaseDay
+10,ndesmara,4,2,633 Main St,E283,Burlington,VT,"",University Of Vermont,4,1,1,1,1,0,0,0,1,0,0,no,5,other,1,Cool,3,4,0,0,"",2022-02-15 22:07:57,95,0,6,11,5000,"",1,11
+11,test1,4,4,6 Newbury Ln,"",Bedford,NH,03110,Noel,5,0,1,0,0,0,0,0,0,0,0,no,6,other,3,Its just an ok place,0,3,0,0,"",2021-07-03 21:17:51,,1,5,12,,,,
+12,ndesmara,5,1,31 S Williams St,3,Burlington,VT,"",Matt Welch,3,0,1,0,1,1,0,0,0,1,1,no,3,other,1,Mold around shower head and musty smell in bathroom.,3,2,0,0,Horrible landlord,2022-02-10 15:16:26,78,0,5,1,4000,"",0,1
+13,PeterD,4,2,65 Lakeview Rd,"",Lincoln,RI,02837,Peter Harbeck,4,0,0,0,1,0,0,0,0,0,1,some,5,other,0,Very clean property with nice backyard.  Landlord is hands-off and very responsive to any issues.,,,,,,,,0,5,12,,,,
+15,Woodellc19,3,1,20 Hungerford Ter,"",Burlington,VT,"",Hindsdale,3,1,1,0,0,0,0,0,0,0,0,some,4,other,0,"",,,,,,,,0,5,1,,,,
+19,PeterD,1,1,125 S Shore Rd,"",Little Compton,RI,02837,Peter Harbeck,5,1,0,0,1,1,0,0,0,0,1,no,5,other,5,"Beautiful rental located right on the ocean.  Newly renovated and in immaculate condition.  Landlord is very personable and extremely responsive.  Students are welcome.  Security deposit is a little high, but property is well worth it.",0,5,0,0,Very responsive to any issues.  Takes great pride in this property.,2021-12-10 22:55:48,,1,5,12,,,,
+22,ndesmara,4,3,6 Newbury Ln,"",Bedford,NH,03110,Kristin &amp; Peter Desmarais,4,1,1,0,0,1,0,0,1,0,1,yes,0,other,0,"",0,3,0,0,"",2021-12-27 18:44:18,83,0,5,1,,,,
+23,test2,5,1,633 Main St,E283,Burlington,VT,"",University Of Vermont,5,1,1,1,0,0,0,0,0,0,0,no,0,other,0,Has a really good view of MAT,,,,,,,,0,5,12,,,,
+24,test3,3,9,633 Main St,E283,Burlington,VT,"",University Of Vermont,5,1,1,1,0,0,0,0,0,0,0,no,0,other,0,E Block is a great place to live,,,,,,,,0,5,1,,,,
+25,test4,4,2,633 Main St,E283,Burlington,VT,"",University Of Vermont,5,1,1,1,0,0,0,0,0,0,0,no,0,other,0,Loved this suite!,,,,,,,,0,5,12,,,,
+26,test1,4,2,633 Main St,E120,Burlington,VT,"",University Of Vermont,4,1,0,0,1,1,1,1,1,1,0,no,3,other,3,This is an awesome place!,2.5,3.5,,,"",2022-02-11 19:19:12,32,0,5,1,0,"",0,1
+27,ndesmara,3,3,3 Newbury Ln,"",Bedford,NH,03110,My Neighbor,2,0,1,0,0,0,0,1,0,0,0,some,3,other,3,"",0,2,0,0,"",2021-11-28 05:57:30,96,1,5,12,,,,
+28,ndesmara,1,0,31 Spear St,A315,Burlington,VT,"",University Of Vermont,4.5,1,0,0,1,1,1,1,1,1,0,no,3,other,5,"",0,3,0,0,"",2021-11-29 15:28:53,97,1,5,1,,,,
+29,ndesmara,1,0,31 Spear St,A318,Burlington,VT,"",University Of Vermont,4,1,0,0,1,1,1,1,1,1,0,no,0,other,0,"",0,2.5,0,0,"",2021-11-27 05:24:29,,0,5,12,,,,
+30,ndesmara,1,0,31 Spear St,A112,Burlington,VT,"",University Of Vermont,3,1,0,0,1,1,1,1,1,1,0,some,1,other,2,"",0,1.5,0,0,"",2021-12-10 01:59:03,,0,5,1,,,,
+31,csfair,4,2,633 Main St,E283,Burlington,VT,"",University Of Vermont,4,1,1,1,1,1,1,1,1,1,1,no,5,gas,1,one of the best dorms on campus - not,0,3,0,0,fvsvfsvfs bfdsxgfdbfsd,2021-12-10 19:34:35,95,0,5,12,,,,
+32,csfair,5,1,31 S Williams St,3,Burlington,VT,"",Matt Welch,1,0,1,0,1,1,0,0,0,1,1,no,3,other,1,A really bad place overall,1,3,0,0,Really unresponsive,2021-11-29 15:23:22,78,0,5,1,4000,,,
+33,csfair,1,0,31 Spear St,A315,Burlington,VT,"",University Of Vermont,4,1,0,0,1,1,1,1,1,1,0,no,3,other,5,Super nice dorm room with an awesome view,0,3,0,0,"",2021-11-29 15:28:53,97,0,5,12,,,,
+68,ndesmara,4,3,35 Hungerford Ter,3,Burlington,VT,"",Hindsdale,0.5,,1,,1,1,1,1,1,1,0,"",0,"",,5,0,1,,,comments,2022-01-24 05:03:06,127,0,0,0,3000,"",0,1
+69,ndesmara,3,2,43 S Williams St,2,Burlington,VT,"",Matt Welch,0.5,,1,,1,1,1,1,1,1,1,no,3,gas,,other comments,1.5,5,,,landlord comments,2022-01-24 05:09:08,128,0,1,3,4000,"",2,4
+70,ndesmara,5,3,53 S Williams St,3,Burlington,VT,"",Matt Welch,3.5,,1,,0,1,0,0,0,1,0,some,3,other,,fjkslfjlkjsfg,4.5,5,,,"",2022-01-28 22:01:11,129,0,7,0,3000,"",0,1
+71,ndesmara,3,2,32 Hungerford Ter,4,Burlington,VT,"",Matt Welch,5,,1,,0,1,0,0,0,0,0,no,3,gas,,no,2,2.5,,,He ok ig,2022-02-08 21:36:18,130,1,0,0,3000,"",0,1
+72,test1,5,1,31 S Williams St,3,Burlington,VT,"",Matt Welch,1,,1,,1,1,0,0,0,1,1,some,4,other,,A pretty decent place but really cramped for 5 bedrooms,1.5,2,,,"He doesn't respond to our emails or fix things in a timely manner. When we moved in, he had never inspected the apartment.",2022-02-11 17:55:47,78,0,6,9,4000,"",1,14

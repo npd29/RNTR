@@ -1,0 +1,13 @@
+pmkApartmentID,fldBedrooms,fldBathrooms,fldAddress1,fldAddress2,fldCity,fldState,fldZIP,fldLandlord,fldLandlordResponse,fldWalls,fldSubletting,fldPaint,fldGarbage,fldWater,fldElectricity,fldGas,fldWifi,fldSnow,fldParking,fldPets,fldSecure,fldHeating,fldMaintenance,fldLandlordOverall,fldApartmentOverall,fldMoveInMonth,fldLeaseMonth,fldLaundry,fldCost,fldMoveInDay,fldLeaseDay
+32,4,2,633 Main St,E120,Burlington,VT,"",University Of Vermont,0,0,0,0,1,1,1,1,1,1,0,no,3,0,3,,,,,,,,
+39,2,1,20 Hungerford Ter,"",Burlington,VT,"",Hindsdale,0,0,1,0,0,0,0,0,0,0,0,some,4,0,0,,,,,,,,
+78,5,1,31 S Williams St,3,Burlington,VT,"",Matt Welch,1,0,1,0,1,1,0,0,0,1,1,no,3,0,1,0,0,,,,,,
+83,4,4,6 Newbury Ln,"",Bedford,NH,03110,Kristin &amp; Peter Desmarais,2.5,1,1,0,1,1,1,1,1,1,1,no,3,0,1.5,1.5,0,,,,,,
+95,4,2,633 Main St,E283,Burlington,VT,"",University Of Vermont,4.6,1,1,1,0,1,0,1,0,1,0,no,1.3,0,0.3,3,0,,,,,,
+96,3,3,3 Newbury Ln,"",Bedford,NH,03110,My Neighbor,2,0,1,0,0,0,0,1,0,0,0,some,3,0,3,1.5,0,,,,,,
+97,1,0,31 Spear St,A315,Burlington,VT,"",University Of Vermont,4.5,1,0,0,1,1,1,1,1,1,0,no,3,0,5,3,0,,,,,,
+98,1,0,31 Spear St,A318,Burlington,VT,"",University Of Vermont,4,1,0,0,1,1,1,1,1,1,0,no,0,0,0,2.5,0,,,,,,
+127,4,3,35 Hungerford Ter,3,Burlington,VT,"",Hindsdale,0.5,,1,,1,1,1,1,1,1,0,"",0,0,,1,0,0,0,"",0,0,1
+128,3,2,43 S Williams St,2,Burlington,VT,"",Matt Welch,0.5,,1,,1,1,1,1,1,1,1,no,3,0,,5,1.5,1,3,"",0,2,4
+129,5,3,53 S Williams St,3,Burlington,VT,"",Matt Welch,3.5,,1,,0,1,0,0,0,1,0,some,3,0,,5,4.5,7,0,"",0,0,1
+130,3,2,32 Hungerford Ter,4,Burlington,VT,"",Matt Welch,5,,1,,0,1,0,0,0,0,0,no,3,0,,2.5,2,0,0,"",0,0,1

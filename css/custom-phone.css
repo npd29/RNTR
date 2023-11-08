@@ -1,0 +1,40 @@
+
+body{
+    padding:0;
+    margin:0;
+}
+nav{
+    display: flex;
+    height: 30vh;
+    position: relative;
+    flex-direction: column;
+}
+nav a{
+    font-size: large;
+    padding: 0 5vw 0 5vw;
+    margin: auto;
+}
+
+nav h1{
+    grid-row: 1;
+    margin-right: auto;
+    margin-left: auto;
+    padding:0;
+    font-size: 1.5em;
+
+}
+article{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+textarea{
+    width: 75vw;
+}
+
+.home h2{
+    top: -5vh;
+}
+#formBox, #formBox{
+    width: 90%
+}
